@@ -561,4 +561,23 @@ ax3.plot(xs,gaussian_kde(samples)(xs))
 ax3.plot(xs,distro.pdf(xs))
 kstest(samples,distro.cdf)
 
-#%% Bayesian Inference on 
+#%% Bayesian Inference on  our conjugate distribution
+np.random.seed(1)
+X = np.sort(np.random.gamma(10,size=750))
+loga = np.log(X).sum(); b = X.size
+from scipy.special import digamma
+def h(alpha):
+    return (alpha-1)*loga - b*np.math.lgamma(alpha)
+h = np.vectorize(h)
+def hprime(alpha):
+    return loga - b*digamma(alpha)
+hprime = np.vectorize(hprime)
+initial_knots = np.array([X[0],X[50],X[-1]])
+xlb = 0
+xub = np.inf
+np.random.seed(1)
+self = ArsSampler(initial_knots,np.vectorize(h),np.vectorize(hprime),0,xub)
+draws = self.sample(1000)
+xs = np.linspace(9,11,200)
+ax4 = fig1.add_subplot(2,2,4)
+ax4.plot(xs,gaussian_kde(draws)(xs))
