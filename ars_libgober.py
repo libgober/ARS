@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon May  2 19:44:58 2016
-The idea here is that we should do this a little more thoughtfully 
-so that calculations are relatively easy.
-@author: brianlibgober
+ARS Sampler v0.01
+
+Authored by Brian Libgober.
+
 """
+#%% Load modules
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stat
@@ -486,98 +487,98 @@ class ArsSampler():
          return samples
         
         
-        
-#%% #reinitialize empty class for prototyping, now we're inside the class
-np.random.seed(1)
-initial_knots = [-1,0,1]
-h = np.vectorize(lambda x: (-1.*(x)**2)/2) #log of  a normal(0,1) pdf, up to proportionality constant
-hprime = np.vectorize(lambda x: -x)
-xlb = -np.inf
-xub = np.inf
-self = ArsSampler(initial_knots,h,hprime,xlb,xub)
-samples = self.sample(10000)
-xs = np.linspace(-5,5,200)
-distro = stat.norm()
-fig1 = plt.figure()
-ax1 = fig1.add_subplot(2,2,1)
-ax1.plot(xs,gaussian_kde(samples)(xs))
-ax1.plot(xs,distro.pdf(xs))
-kstest(samples,"norm")
-#%%
-#np.random.seed(1)
-#for i in np.random.random(size=100):
-#    self.insert_value(30*(i-0.5))
-#self.show()
-#func = np.vectorize(self._UpperHull.value)
-#%%
-#np.random.seed(2)
-#samples = self.sample(10000)
-#print samples
-#plt.hist(samples)
-#from scipy.stats import kstest
-#kstest(samples,"norm")
-#%% Gamma k, theta
-k = 9; theta=0.5
-distro = stat.gamma(a=k,scale=0.5)
-h = np.vectorize(lambda x: (k-1)*np.log(x) -x/theta)
-hprime = np.vectorize(lambda x: (k-1)/x -1/theta)
-initial_knots = [1,4.5,7]
-xlb = -np.inf
-xub = np.inf
-self = ArsSampler(initial_knots,h,hprime,xlb,xub)
-np.random.seed(1)
-samples = self.sample(10000)
-xs = np.linspace(0,10,200)
-ax2 = fig1.add_subplot(2,2,2)
-ax2.plot(xs,gaussian_kde(samples)(xs))
-ax2.plot(xs,distro.pdf(xs))
-kstest(samples,distro.cdf)
-#%% Truncated Normal, cut above -1
-a=-1
-b=np.inf
-def h(x):
-    if a <= x < b:
-        return (-1.*(x)**2)/2
-    else:
-        return -np.inf
-
-def hprime(x):
-    if a <= x < b:
-        return -1.*(x)
-    else:
-        return -np.nan
-
-initial_knots = [-0.5,1,3]
-xlb = a
-xub = np.inf
-distro = stat.truncnorm(a=a,b=np.inf)
-np.random.seed(1)
-self = ArsSampler(initial_knots,np.vectorize(h),np.vectorize(hprime),xlb,xub)
-samples = self.sample(10000)
-from scipy.stats import gaussian_kde
-xs = np.linspace(-2,10,200)
-ax3 = fig1.add_subplot(2,2,3)
-ax3.plot(xs,gaussian_kde(samples)(xs))
-ax3.plot(xs,distro.pdf(xs))
-kstest(samples,distro.cdf)
-
-#%% Bayesian Inference on  our conjugate distribution
-np.random.seed(1)
-X = np.sort(np.random.gamma(10,size=750))
-loga = np.log(X).sum(); b = X.size
-from scipy.special import digamma
-def h(alpha):
-    return (alpha-1)*loga - b*np.math.lgamma(alpha)
-h = np.vectorize(h)
-def hprime(alpha):
-    return loga - b*digamma(alpha)
-hprime = np.vectorize(hprime)
-initial_knots = np.array([X[0],X[50],X[-1]])
-xlb = 0
-xub = np.inf
-np.random.seed(1)
-self = ArsSampler(initial_knots,np.vectorize(h),np.vectorize(hprime),0,xub)
-draws = self.sample(1000)
-xs = np.linspace(9,11,200)
-ax4 = fig1.add_subplot(2,2,4)
-ax4.plot(xs,gaussian_kde(draws)(xs))
+if __name__ == '__main__':       
+    #%% #reinitialize empty class for prototyping, now we're inside the class
+    np.random.seed(1)
+    initial_knots = [-1,0,1]
+    h = np.vectorize(lambda x: (-1.*(x)**2)/2) #log of  a normal(0,1) pdf, up to proportionality constant
+    hprime = np.vectorize(lambda x: -x)
+    xlb = -np.inf
+    xub = np.inf
+    self = ArsSampler(initial_knots,h,hprime,xlb,xub)
+    samples = self.sample(10000)
+    xs = np.linspace(-5,5,200)
+    distro = stat.norm()
+    fig1 = plt.figure()
+    ax1 = fig1.add_subplot(2,2,1)
+    ax1.plot(xs,gaussian_kde(samples)(xs))
+    ax1.plot(xs,distro.pdf(xs))
+    kstest(samples,"norm")
+    #%%
+    #np.random.seed(1)
+    #for i in np.random.random(size=100):
+    #    self.insert_value(30*(i-0.5))
+    #self.show()
+    #func = np.vectorize(self._UpperHull.value)
+    #%%
+    #np.random.seed(2)
+    #samples = self.sample(10000)
+    #print samples
+    #plt.hist(samples)
+    #from scipy.stats import kstest
+    #kstest(samples,"norm")
+    #%% Gamma k, theta
+    k = 9; theta=0.5
+    distro = stat.gamma(a=k,scale=0.5)
+    h = np.vectorize(lambda x: (k-1)*np.log(x) -x/theta)
+    hprime = np.vectorize(lambda x: (k-1)/x -1/theta)
+    initial_knots = [1,4.5,7]
+    xlb = -np.inf
+    xub = np.inf
+    self = ArsSampler(initial_knots,h,hprime,xlb,xub)
+    np.random.seed(1)
+    samples = self.sample(10000)
+    xs = np.linspace(0,10,200)
+    ax2 = fig1.add_subplot(2,2,2)
+    ax2.plot(xs,gaussian_kde(samples)(xs))
+    ax2.plot(xs,distro.pdf(xs))
+    kstest(samples,distro.cdf)
+    #%% Truncated Normal, cut above -1
+    a=-1
+    b=np.inf
+    def h(x):
+        if a <= x < b:
+            return (-1.*(x)**2)/2
+        else:
+            return -np.inf
+    
+    def hprime(x):
+        if a <= x < b:
+            return -1.*(x)
+        else:
+            return -np.nan
+    
+    initial_knots = [-0.5,1,3]
+    xlb = a
+    xub = np.inf
+    distro = stat.truncnorm(a=a,b=np.inf)
+    np.random.seed(1)
+    self = ArsSampler(initial_knots,np.vectorize(h),np.vectorize(hprime),xlb,xub)
+    samples = self.sample(10000)
+    from scipy.stats import gaussian_kde
+    xs = np.linspace(-2,10,200)
+    ax3 = fig1.add_subplot(2,2,3)
+    ax3.plot(xs,gaussian_kde(samples)(xs))
+    ax3.plot(xs,distro.pdf(xs))
+    kstest(samples,distro.cdf)
+    
+    #%% Bayesian Inference on  our conjugate distribution
+    np.random.seed(1)
+    X = np.sort(np.random.gamma(10,size=750))
+    loga = np.log(X).sum(); b = X.size
+    from scipy.special import digamma
+    def h(alpha):
+        return (alpha-1)*loga - b*np.math.lgamma(alpha)
+    h = np.vectorize(h)
+    def hprime(alpha):
+        return loga - b*digamma(alpha)
+    hprime = np.vectorize(hprime)
+    initial_knots = np.array([X[0],X[50],X[-1]])
+    xlb = 0
+    xub = np.inf
+    np.random.seed(1)
+    self = ArsSampler(initial_knots,np.vectorize(h),np.vectorize(hprime),0,xub)
+    draws = self.sample(1000)
+    xs = np.linspace(9,11,200)
+    ax4 = fig1.add_subplot(2,2,4)
+    ax4.plot(xs,gaussian_kde(draws)(xs))
