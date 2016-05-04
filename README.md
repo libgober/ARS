@@ -1,4 +1,4 @@
-# ARS
+# Adapative Rejection Sampler V 0.01
 
 This is a Python implementation of the algorithm described in P. Wild, W.R. Gilks, Algorithm AS 287: Adaptive Rejection Sampling from Log Concave Density functions. Assuming that you have a log concave density, this algorithm allows you to sample without ever having to calculate an integral.  For the Gibbs sampling implementation this was created for, this is particularly attractive.
 
