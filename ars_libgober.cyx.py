@@ -1,4 +1,7 @@
-# -*- coding: utf-8 -*-
+# encoding: utf-8
+# cython: profile=True
+# filename: ars_libgober.cyx
+
 """
 ARS Sampler v0.01
 
@@ -12,7 +15,8 @@ import scipy.stats as stat
 from scipy.stats import gaussian_kde
 
 from scipy.stats import kstest
-from matplotlib.backends.backend_pdf import PdfPages
+if __name = __"main"__:
+    from matplotlib.backends.backend_pdf import PdfPages
 
 #%%
 class Interval:
@@ -226,7 +230,7 @@ class Hull():
     def max_value(self):
         max_value = self._segments[0].maxvalue
         for i in xrange(1,self.interval_count):
-            max_value = max(max_value,self._segments[i].maxvalue)
+            max_value = max(max_value,self._segments[1].maxvalue)
             if self._segments[i].slope <= 0:
                 return max_value
             else:
@@ -449,7 +453,6 @@ class ArsSampler(object):
         masses = np.array([])
         hullmax =  self._UpperHull.max_value
         for segment in self._UpperHull._segments:
-            #print segment
             if segment.slope !=0:
                 masses =  np.append(masses,(1./segment.slope)*\
                 (np.exp(segment.uppervalue - hullmax) - \

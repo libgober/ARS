@@ -1,0 +1,626 @@
+events: Ticks
+summary: 5
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+fn=asanyarray
+476 0
+cfn=<numpy.core.multiarray.array>
+calls=86 0
+476 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+fn=_vectorize_call
+1869 0
+cfn=<numpy.core.multiarray.array>
+calls=92 0
+1869 0
+cfl=<ipython-input-31-a0122cc1551b>
+cfn=h
+calls=16 5
+1869 0
+cfl=<ipython-input-31-a0122cc1551b>
+cfn=hprime
+calls=16 9
+1869 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=_get_ufunc_and_otypes
+calls=46 1813
+1869 1
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=__call__
+calls=18 1783
+1869 0
+
+fn=<method 'random_sample' of 'mtrand.RandomState' objects>
+0 0
+
+fl=ars_libgober.py
+fn=interval_count
+220 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+fn=rollaxis
+1392 0
+
+fl=ars_libgober.py
+fn=uppervalue
+74 0
+
+fl=ars_libgober.py
+fn=_masses
+439 0
+cfl=ars_libgober.py
+cfn=uppervalue
+calls=33 74
+439 0
+cfn=<numpy.core.multiarray.array>
+calls=6 0
+439 0
+cfl=ars_libgober.py
+cfn=max_value
+calls=6 224
+439 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=append
+calls=33 4098
+439 0
+cfl=ars_libgober.py
+cfn=lowervalue
+calls=33 78
+439 0
+
+fl=ars_libgober.py
+fn=interior_knots
+126 0
+
+fn=<math.lgamma>
+0 0
+
+fl=ars_libgober.py
+fn=insert_value
+336 0
+cfl=ars_libgober.py
+cfn=interior_knots
+calls=24 126
+336 0
+cfl=ars_libgober.py
+cfn=__init__
+calls=18 45
+336 0
+cfn=<numpy.core.multiarray.concatenate>
+calls=12 0
+336 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=insert
+calls=12 3888
+336 0
+cfl=ars_libgober.py
+cfn=z
+calls=12 315
+336 0
+cfl=ars_libgober.py
+cfn=insert_knot
+calls=6 133
+336 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=__call__
+calls=6 1783
+336 0
+
+fn=<method 'copy' of 'numpy.ndarray' objects>
+0 0
+
+fn=<numpy.core.multiarray.array>
+0 0
+
+fl=ars_libgober.py
+fn=max_value
+224 0
+cfl=ars_libgober.py
+cfn=interval_count
+calls=12 220
+224 0
+cfl=ars_libgober.py
+cfn=maxvalue
+calls=46 82
+224 0
+cfn=<max>
+calls=34 0
+224 0
+
+fl=ars_libgober.py
+fn=interior_contains
+25 0
+
+fl=ars_libgober.py
+fn=closure_contains
+28 0
+
+fl=ars_libgober.py
+fn=_sample_hull
+463 0
+cfn=<method 'random_sample' of 'mtrand.RandomState' objects>
+calls=6 0
+463 0
+cfl=ars_libgober.py
+cfn=interval_count
+calls=6 220
+463 0
+cfl=ars_libgober.py
+cfn=_masses
+calls=6 439
+463 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=insert
+calls=6 3888
+463 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/fromnumeric.py
+cfn=cumsum
+calls=6 2038
+463 0
+cfl=ars_libgober.py
+cfn=y_intercept
+calls=6 51
+463 0
+cfl=ars_libgober.py
+cfn=__getitem__
+calls=6 217
+463 0
+cfn=<method 'sum' of 'numpy.ndarray' objects>
+calls=6 0
+463 0
+cfl=ars_libgober.py
+cfn=lowervalue
+calls=6 78
+463 0
+cfl=ars_libgober.py
+cfn=max_value
+calls=6 459
+463 0
+
+fl=ars_libgober.py
+fn=__init__
+177 0
+cfn=<numpy.core.multiarray.array>
+calls=1 0
+177 0
+cfl=ars_libgober.py
+cfn=__init__
+calls=3 45
+177 0
+cfn=<numpy.core.multiarray.concatenate>
+calls=2 0
+177 0
+cfl=ars_libgober.py
+cfn=__init__
+calls=1 19
+177 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=append
+calls=2 4098
+177 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/fromnumeric.py
+cfn=sort
+calls=1 712
+177 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/arraysetops.py
+cfn=unique
+calls=1 96
+177 0
+
+fl=ars_libgober.py
+fn=maxvalue
+82 0
+cfl=ars_libgober.py
+cfn=uppervalue
+calls=46 74
+82 0
+cfl=ars_libgober.py
+cfn=lowervalue
+calls=46 78
+82 0
+cfn=<max>
+calls=46 0
+82 0
+
+fl=ars_libgober.py
+fn=__init__
+45 0
+cfl=ars_libgober.py
+cfn=__init__
+calls=21 19
+45 0
+
+fn=<method 'item' of 'numpy.ndarray' objects>
+0 0
+
+fl=<ipython-input-31-a0122cc1551b>
+fn=h
+5 0
+cfn=<math.lgamma>
+calls=32 0
+5 0
+
+fn=<len>
+0 0
+
+fn=<numpy.core.multiarray.concatenate>
+0 0
+
+fn=<method 'reduce' of 'numpy.ufunc' objects>
+0 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+fn=__init__
+1755 0
+cfn=<isinstance>
+calls=2 0
+1755 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+fn=asarray
+406 0
+cfn=<numpy.core.multiarray.array>
+calls=122 0
+406 0
+
+fl=ars_libgober.py
+fn=__init__
+19 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+fn=insert
+3888 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+cfn=rollaxis
+calls=30 1392
+3888 0
+cfn=<numpy.core.multiarray.array>
+calls=60 0
+3888 0
+cfn=<method 'item' of 'numpy.ndarray' objects>
+calls=30 0
+3888 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+cfn=asarray
+calls=30 406
+3888 0
+cfn=<isinstance>
+calls=30 0
+3888 0
+cfn=<numpy.core.multiarray.empty>
+calls=30 0
+3888 0
+
+fl=ars_libgober.py
+fn=knots
+122 0
+
+fn=<numpy.core.umath.frompyfunc>
+0 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/fromnumeric.py
+fn=cumsum
+2038 0
+cfn=<method 'cumsum' of 'numpy.ndarray' objects>
+calls=6 0
+2038 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+fn=append
+4098 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+cfn=asanyarray
+calls=40 476
+4098 0
+cfn=<numpy.core.multiarray.concatenate>
+calls=40 0
+4098 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/fromnumeric.py
+cfn=ravel
+calls=40 1373
+4098 0
+cfn=<method 'ravel' of 'numpy.ndarray' objects>
+calls=1 0
+4098 0
+
+fl=ars_libgober.py
+fn=z
+315 0
+
+fn=<method 'flatten' of 'numpy.ndarray' objects>
+0 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/fromnumeric.py
+fn=sort
+712 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+cfn=asanyarray
+calls=3 476
+712 0
+cfn=<method 'copy' of 'numpy.ndarray' objects>
+calls=3 0
+712 0
+cfn=<method 'sort' of 'numpy.ndarray' objects>
+calls=3 0
+712 0
+
+fn=<isinstance>
+0 0
+
+fl=ars_libgober.py
+fn=sample
+506 0
+cfl=ars_libgober.py
+cfn=insert_value
+calls=6 336
+506 1
+cfn=<numpy.core.multiarray.array>
+calls=1 0
+506 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=append
+calls=1 4098
+506 0
+cfl=ars_libgober.py
+cfn=_sample
+calls=6 493
+506 2
+
+fn=<numpy.core.multiarray.empty>
+0 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/fromnumeric.py
+fn=ravel
+1373 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+cfn=asanyarray
+calls=40 476
+1373 0
+cfn=<isinstance>
+calls=40 0
+1373 0
+cfn=<method 'ravel' of 'numpy.ndarray' objects>
+calls=40 0
+1373 0
+
+fl=ars_libgober.py
+fn=insert_knot
+133 0
+cfl=ars_libgober.py
+cfn=interior_contains
+calls=22 25
+133 0
+cfl=ars_libgober.py
+cfn=closure_contains
+calls=6 28
+133 0
+cfl=ars_libgober.py
+cfn=__init__
+calls=12 19
+133 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=insert
+calls=12 3888
+133 0
+cfl=ars_libgober.py
+cfn=knots
+calls=6 122
+133 0
+
+fl=ars_libgober.py
+fn=value
+67 0
+cfl=ars_libgober.py
+cfn=closure_contains
+calls=6 28
+67 0
+
+fl=ars_libgober.py
+fn=y_intercept
+51 0
+
+fl=ars_libgober.py
+fn=_sample
+493 0
+cfn=<method 'random_sample' of 'mtrand.RandomState' objects>
+calls=6 0
+493 0
+cfl=ars_libgober.py
+cfn=_sample_hull
+calls=6 463
+493 1
+cfl=ars_libgober.py
+cfn=value
+calls=6 212
+493 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=__call__
+calls=6 1783
+493 0
+
+fn=<method 'sort' of 'numpy.ndarray' objects>
+0 0
+
+fl=<ipython-input-31-a0122cc1551b>
+fn=hprime
+9 0
+
+fl=ars_libgober.py
+fn=__getitem__
+217 0
+
+fl=ars_libgober.py
+fn=__init__
+284 0
+cfl=ars_libgober.py
+cfn=interior_knots
+calls=7 126
+284 0
+cfn=<numpy.core.multiarray.array>
+calls=2 0
+284 0
+cfl=ars_libgober.py
+cfn=__init__
+calls=1 177
+284 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=append
+calls=4 4098
+284 0
+cfl=ars_libgober.py
+cfn=__init__
+calls=2 109
+284 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=__call__
+calls=2 1783
+284 0
+
+fn=<method 'sum' of 'numpy.ndarray' objects>
+0 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/_methods.py
+cfn=_sum
+calls=6 31
+0 0
+
+fl=ars_libgober.py
+fn=value
+212 0
+cfl=ars_libgober.py
+cfn=closure_contains
+calls=22 28
+212 0
+cfl=ars_libgober.py
+cfn=value
+calls=6 67
+212 0
+
+fl=ars_libgober.py
+fn=__init__
+109 0
+cfn=<numpy.core.multiarray.array>
+calls=2 0
+109 0
+cfn=<numpy.core.multiarray.concatenate>
+calls=2 0
+109 0
+cfl=ars_libgober.py
+cfn=__init__
+calls=10 19
+109 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/fromnumeric.py
+cfn=sort
+calls=2 712
+109 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/arraysetops.py
+cfn=unique
+calls=2 96
+109 0
+
+fl=ars_libgober.py
+fn=lowervalue
+78 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+fn=_get_ufunc_and_otypes
+1813 0
+cfl=<ipython-input-31-a0122cc1551b>
+cfn=h
+calls=16 5
+1813 0
+cfn=<len>
+calls=46 0
+1813 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+cfn=asarray
+calls=92 406
+1813 0
+cfn=<numpy.core.umath.frompyfunc>
+calls=46 0
+1813 0
+cfn=<isinstance>
+calls=46 0
+1813 0
+cfl=<ipython-input-31-a0122cc1551b>
+cfn=hprime
+calls=16 9
+1813 0
+cfn=<method 'join' of 'str' objects>
+calls=46 0
+1813 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=__call__
+calls=14 1783
+1813 0
+
+fn=<max>
+0 0
+
+fl=ars_libgober.py
+fn=max_value
+459 0
+cfl=ars_libgober.py
+cfn=max_value
+calls=6 224
+459 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/_methods.py
+fn=_sum
+31 0
+cfn=<method 'reduce' of 'numpy.ufunc' objects>
+calls=6 0
+31 0
+
+fn=<method 'cumsum' of 'numpy.ndarray' objects>
+0 0
+
+fn=<method 'join' of 'str' objects>
+0 0
+
+fn=<method 'disable' of '_lsprof.Profiler' objects>
+0 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+fn=__call__
+1783 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=_vectorize_call
+calls=46 1869
+1783 1
+
+fn=<method 'ravel' of 'numpy.ndarray' objects>
+0 0
+
+fl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/arraysetops.py
+fn=unique
+96 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/core/numeric.py
+cfn=asanyarray
+calls=3 476
+96 0
+cfn=<numpy.core.multiarray.concatenate>
+calls=3 0
+96 0
+cfn=<method 'flatten' of 'numpy.ndarray' objects>
+calls=3 0
+96 0
+cfn=<method 'sort' of 'numpy.ndarray' objects>
+calls=3 0
+96 0
+
+fl=<string>
+fn=<module>
+1 0
+cfl=/Applications/Spyder-Py2.app/Contents/Resources/lib/python2.7/numpy/lib/function_base.py
+cfn=__init__
+calls=2 1755
+1 0
+cfl=ars_libgober.py
+cfn=sample
+calls=1 506
+1 4
+cfl=ars_libgober.py
+cfn=__init__
+calls=1 284
+1 0
+
